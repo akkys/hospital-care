@@ -1,0 +1,165 @@
+POST http://localhost:5000/addAppt/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Chiru",
+    "email":"chiru@gmail.com",
+    "contact":"8868545474",
+    "address":"8th Cross, BTM Layout",
+    "city": "Bangalore",
+    "zipcode":"560088",
+    "call":"Morning",
+    "choose":"A Routine Checkup",
+    "docName":"Shankar",
+    "date":"2020-06-20"
+}
+
+###
+GET http://localhost:5000/addAppt/ HTTP/1.1
+
+###
+DELETE http://localhost:5000/addAppt/5eebb10ba7858f7b83e8300e HTTP/1.1
+
+###
+POST http://localhost:5000/addAppt/update/5eec925f8f1eed3b71c32a04 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Arun",
+    "email": "arun@gmail.com",
+    "contact": "08798554474",
+    "address": "5th Cross, Silk Board",
+    "city": "Bangalore",
+    "zipcode": "560098",
+    "time": "Evening",
+    "choose": "A Routine Checkup",
+    "docName": "Shekar",
+    "date": "2020-06-20T00:00:00.000Z"
+}
+
+###
+POST http://localhost:5000/addDoc/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"RaviShankar",
+    "expert":"Cardiology"
+}
+
+###
+GET http://localhost:5000/addDoc/ HTTP/1.1
+
+###
+DELETE http://localhost:5000/addDoc/5eef3b266175373f08acb2f6 HTTP/1.1
+
+###
+POST http://localhost:5000/addDoc/update/5eef3aae6175373f08acb2f5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Lewis DSouza",
+    "expert":"Cardiology",
+    "desc":"Cardiology specialist"
+}
+
+###
+POST http://localhost:5000/addRoom/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "num":"1",
+    "name":"Blood Sample",
+    "capacity":"6",
+    "groups":"Blood, Urine",
+    "timing":"7.30 AM - 9.30 PM"
+}
+
+###
+GET http://localhost:5000/addRoom/ HTTP/1.1
+
+###
+POST http://localhost:5000/addRoom/update/5eefa116c0bd7b7ceecd03bb HTTP/1.1
+Content-Type: application/json
+
+{
+    "num":"3",
+    "name":"X-Ray/ MRI",
+    "capacity":"2",
+    "groups":"Blood, Urine, Stool",
+    "timing":"8.30 AM - 9.30 PM"
+}
+
+###
+POST http://localhost:5000/addPatient/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "pid":"1235",
+    "name":"Karthik Kumar",
+    "age":"32",
+    "gender":"Male",
+    "address":"Bangalore",
+    "date":"21/05/2020",
+    "contact":"9965785474",
+    "roomNum":"203",
+    "roomType":"Semi-Special"
+}
+
+###
+GET http://localhost:5000/addPatient/ HTTP/1.1
+
+###
+POST http://localhost:5000/addPatient/update/5ef1e8f25211a8288e46cb17 HTTP/1.1
+Content-Type: application/json
+
+{
+     "pid":"1234",
+    "name":"Suresh K",
+    "age":"32",
+    "gender":"Male",
+    "address":"Bangalore",
+    "date":"22/05/2020",
+    "contact":"9685743652",
+    "roomNum":"301",
+    "roomType":"Semi-Special"
+}
+
+###
+POST http://localhost:5000/addWard/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "roomType":"Suit",
+    "price":"20,000",
+    "desc":"Well furnished patient rooms Well furnished attendant room with TV (cable connection), Sofa and bed for attendant, Refrigerator,Dedicated nurse, Chief dietitian for diet advice, Diet Service, Medicine tray, Telephone facility, Patient wardrobe."
+}
+
+###
+GET http://localhost:5000/addWard/ HTTP/1.1
+
+###
+DELETE http://localhost:5000/addWard/5ef47d092f05c321fd35f765 HTTP/1.1
+
+###
+POST http://localhost:5000/addWard/update/5ef4819602302b247a886d4a HTTP/1.1
+Content-Type: application/json
+
+{
+    "roomType": "Suite",
+    "price": "20,000",
+    "desc": "Well furnished patient rooms Well furnished attendant room with TV (cable connection), Sofa and bed for attendant, Refrigerator,Dedicated nurse, Chief dietitian for diet advice, Diet Service, Medicine tray, Telephone facility, Patient wardrobe."
+}
+
+###
+POST http://localhost:5000/addBranch/add HTTP/1.1
+Content-Type: application/json
+
+{
+    "address":"#111, 8th Cross, 2nd Main, WhiteField, Bangalore-560012",
+    "email":"deanoffice@askh.ac.in",
+    "contact":"080 98765485",
+    "helpLine":"080 98745878"
+}
+
+###
+GET http://localhost:5000/addBranch/ HTTP/1.1

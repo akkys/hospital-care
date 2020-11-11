@@ -1,0 +1,64 @@
+.appt-container label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.appt-container h2 {
+  margin-bottom: 3%;
+  border-bottom: 1px solid rgb(208, 212, 211);
+  padding-bottom: 1%;
+  font-weight: 500;
+}
+
+.appt-container ::placeholder {
+  font-size: 14px;
+}
+
+.appt-container table tr {
+  background-color: rgb(126, 207, 245);
+  font-size: 14px;
+}
+
+.appt-container table tr th {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.appt-container table tr td {
+  background-color: rgb(223, 241, 243);
+  border-bottom: 1px solid;
+}
+
+#nav-item {
+  width: 10%;
+  color: rgb(223, 219, 219);
+}
+
+.card-container h4 {
+  font-weight: 500;
+}
+
+.card-container h5 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.card-container h6 {
+  font-weight: 500;
+  color: rgb(95, 94, 94);
+}
+
+.card-container p {
+  font-size: 16px;
+  color: rgb(95, 94, 94);
+  font-weight: 500;
+}
+
+#btn {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.appt-container i {
+  cursor: pointer;
+}
